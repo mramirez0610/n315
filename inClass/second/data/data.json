@@ -1,0 +1,40 @@
+{
+    "STUDENTS": [
+        {
+            "firstName": "Marco",
+            "lastName": "Ramirez",
+            "address": "111 Gum Street",
+            "phone": "317-111-1111",
+            "email": "gumby@flumbo.com",
+            "classes": [
+                {"number": "123"},
+                {"number": "456"},
+                {"number": "789"}
+            ]
+        },
+        {
+            "firstName": "Chris",
+            "lastName": "Smith",
+            "address": "222 Gum Street",
+            "phone": "317-222-2222",
+            "email": "flumby@gumbo.com",
+            "classes": [
+                {"number": "123"},
+                {"number": "456"},
+                {"number": "789"}
+            ]
+        },
+        {
+            "firstName": "John",
+            "lastName": "Doe",
+            "address": "333 Gum Street",
+            "phone": "317-333-3333",
+            "email": "gumber@flumber.com",
+            "classes": [
+                {"number": "123"},
+                {"number": "456"},
+                {"number": "789"}
+            ]
+        }
+    ]
+}
