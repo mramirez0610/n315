@@ -1,13 +1,45 @@
-nav{
+header {
     width: 100%;
     height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     background-color: #333888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    a{
-        color: #fff;
-        text-decoration: none;
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 10%;
+        gap: 25%;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
     }
+
+    #login{
+        margin-right: 10%;
+        background-color: #adacaa;
+        padding: 10px 15px;
+        border-radius: 15px;
+
+        a {
+            color: #000;
+            text-decoration: none;    
+        }
+    }
+}
+
+.home{
+    background-image: url(../img/first.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about{
+    background-image: url(../img/second.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }

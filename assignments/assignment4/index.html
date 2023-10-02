@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment Four</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment Four</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header>
     <nav>
       <a id="home" href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a href="#">FAQ</a>
+      <a id="about" href="#">About</a>
     </nav>
+    <div id="login">
+      <a href="#">Login</a>
+    </div>
+  </header>
 
-    <div id="modal">
-      <div id="modal-click-background" class="close"></div>
-      <div class="modal-content-holder">
-        <div id="close-button" class="close"><a href="#">X</a></div>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-          laboriosam cumque sunt facilis quam corrupti, numquam, eaque beatae
-          assumenda molestias nihil officiis minima doloremque facere,
-          praesentium natus aliquam consequuntur fugiat nostrum dolor
-          repellendus? Cupiditate repellendus a alias sequi suscipit iste minima
-          molestiae provident. Maxime odit quidem sunt corrupti sint provident
-          dicta distinctio delectus excepturi exercitationem adipisci iste
-          similique ratione magnam eius culpa nisi architecto veritatis earum
-          officia praesentium nam, blanditiis quas? Ipsam iste similique
-          consequatur dolorum aut necessitatibus eius id libero vero minus
-          suscipit eos, non explicabo blanditiis itaque voluptas laborum eum!
-          Praesentium voluptatem sit repellat fugit nulla odit unde.
-        </p>
-        <span class="close-cancel close">Close Message</span>
+  <div id="modal">
+    <div id="modal-click-background" class="close"></div>
+    <div class="modal-content-holder">
+      <div id="close-button" class="close"><a href="#">X</a></div>
+      <div id="loginForm">
+        <h2 id="banner">Login</h2>
+        <h6>user: admin, password: admin</h6>
+        <form action="#">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" />
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </form>
+
+        <input type="submit" value="Login" class="button" id="loginButton" />
+        <input type="submit" class="button close" value="Close Message"></span>
       </div>
     </div>
+  </div>
 
-    <script type="module" src="lib/jquery-3.7.1.min.js"></script>
-    <script type="module" src="app/app.js"></script>
-    <script type="module" src="model/model.js"></script>
-  </body>
+  <div id="app"></div>
+
+  
+
+  <script type="module" src="./lib/jquery-3.7.1.min.js"></script>
+  <script type="module" src="./app/app.js"></script>
+  <script type="module" src="../model/model.js"></script>
+</body>
+
 </html>

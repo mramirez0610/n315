@@ -18,12 +18,39 @@
     min-height: 300px;
     min-width: 300px;
     max-width: 60%;
+    height: 50%;
     background-color: #fff;
     border-radius: 15px;
     z-index: 99;
 
-    p{
-        padding: 20px;
+    #loginForm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .button {
+        padding: 5px 15px;
+        background-color: #333888;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 50%;
+        margin-top: 2vh;
+      }
+    }
+
+    p {
+      padding: 20px;
     }
 
     #close-button {
@@ -37,13 +64,5 @@
       }
     }
 
-    .close-cancel{
-        padding: 5px 15px;
-        background-color: #333888;
-        color: #fff;
-        border-radius: 5px;
-        cursor: pointer;
-        width: 20%;
-    }
   }
 }
