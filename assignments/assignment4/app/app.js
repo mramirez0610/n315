@@ -3,7 +3,7 @@ import { changePageContent } from "../model/model.js";
 function initListeners() {
   modalRules();
   login();
-  routing(home);
+  routing();
 }
 
 $(document).ready(function () {

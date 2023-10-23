@@ -1,0 +1,30 @@
+.content{
+    min-height: 400px;
+    background-color: brown;
+}
+
+.m-links{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ccc;
+    height: calc(100vh - 50px);
+    width: 100vw;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .m-nav{
+        display: flex;
+    }
+
+    .links{
+        margin-right: 0px;
+    }
+}
