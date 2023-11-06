@@ -1,0 +1,27 @@
+const homeRoute = `
+<main class="home-hero">
+    <div class="main-bubble">
+        <div class="content">
+            <h1>The Jungle Cook</h1>
+            <p>
+            The home to various recipes of your choice. Add your own recipe
+            today and fill the world with joy!
+            </p>
+        </div>
+    </div>
+    <div class="sub-bubble">
+        <div class="content">
+            <p>Want to be a Jungle Cook? Go ahead and the kitchen is yours!</p>
+        </div>
+    </div>
+</main>`;
+
+const browseRoute = ``;
+
+const recipeRoute = ``;
+
+const loginRoute = ``;
+
+export function changePageContent(pageContentVarName) {
+  $("#app").html(eval(pageContentVarName));
+}

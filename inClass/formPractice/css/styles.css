@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#app {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.formHolder {
+  width: 900px;
+
+  padding-top: 20px;
+}
+
+.formHolder input {
+  display: block;
+
+  width: 100%;
+
+  margin-bottom: 20px;
+
+  height: 50px;
+
+  border: none;
+
+  border-bottom: 2px solid #000;
+
+  padding-left: 5px;
+}
+
+.formTop {
+  position: relative;
+}
+
+.formTop .imageBtn {
+  position: absolute;
+
+  right: 0;
+
+  top: 13px;
+
+  cursor: pointer;
+
+  width: 100px;
+
+  height: 30px;
+
+  background-color: cadetblue;
+
+  color: #fff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+}
+
+.formDesc,
+.formInstr {
+  margin-top: 100px;
+
+  position: relative;
+}
+
+.formDesc .descAddBtn {
+  position: absolute;
+
+  width: 40px;
+
+  height: 40px;
+
+  background-color: cadetblue;
+
+  color: #fff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  bottom: 5px;
+
+  right: 0;
+
+  cursor: pointer;
+}
+
+.formInstr .instrAddBtn {
+  position: absolute;
+
+  width: 40px;
+
+  height: 40px;
+
+  background-color: cadetblue;
+
+  color: #fff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  bottom: 5px;
+
+  right: 0;
+
+  cursor: pointer;
+}
+
+.btn {
+  width: 150px;
+
+  height: 50px;
+
+  background-color: cadetblue;
+
+  color: #fff;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}

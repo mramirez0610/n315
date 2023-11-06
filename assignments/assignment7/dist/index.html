@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jungle Cook</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="./assets/logo/logo.svg" alt="logo" class="logo" />
+      <nav class="wNav">
+        <a id="home">Home</a>
+        <a id="browse">Browse</a>
+        <a id="recipe">Create Recipe</a>
+        <a id="login">Login</a>
+      </nav>
+
+      <div class="hamburger-icon" id="hamburger-icon">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+
+        <nav class="mNav">
+          <a id="home">Home</a>
+          <a id="browse">Browse</a>
+          <a id="recipe">Create Recipe</a>
+          <a id="login">Login</a>
+        </nav>
+      </div>
+    </div>
+
+    <div id="app"></div>
+
+    <div class="footer">
+      <div class="copy">Copyright &copy; 2019 The Jungle Cook</div>
+      <nav>
+        <a href="#">Login</a>
+        <a href="#">Recipes by Category</a>
+        <a href="#">Privacy and Copyright</a>
+        <a href="#">Create Recipes</a>
+        <a href="#">Your Recipes</a>
+      </nav>
+      <div class="socials">
+        <img src="./assets/imgs/facebook.svg" alt="Facebook" />
+        <img src="./assets/imgs/instagram.svg" alt="Instagram" />
+      </div>
+    </div>
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script type="module" src="app/app.js"></script>
+    <script type="module" src="model/model.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form | Data</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="formHolder">
+        <h1>Add your thing today!!</h1>
+
+        <div class="formTop">
+          <div class="imageBtn">Attach Image</div>
+          <input
+            id="imagePath"
+            type="text"
+            placeholder="Image URL / Image Name"
+          />
+          <input type="text" placeholder="Item Name" id="itemName" />
+        </div>
+
+        <div class="formDesc">
+          <input type="text" placeholder="Description 1" id="desc0" />
+          <input type="text" placeholder="Description 2" id="desc1" />
+          <input type="text" placeholder="Description 3" id="desc2" />
+          <div class="descAddBtn">+</div>
+        </div>
+
+        <div class="formInstr">
+          <input type="text" placeholder="Instruction 1" id="instr0" />
+          <input type="text" placeholder="Instruction 2" id="instr1" />
+          <input type="text" placeholder="Instruction 3" id="instr2" />
+          <div class="instrAddBtn">+</div>
+        </div>
+
+        <div class="submit btn">Submit Form</div>
+      </div>
+    </div>
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>

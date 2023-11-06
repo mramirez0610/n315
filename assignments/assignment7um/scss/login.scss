@@ -1,0 +1,56 @@
+.login {
+  height: 100%;
+  background-color: #ffd972;
+  display: flex;
+  justify-content: center;
+
+  .acco {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+
+    .login-sign {
+      display: flex;
+      flex-direction: column;
+      width: 233px;
+      height: 300px;
+
+      p {
+        font-size: 16px;
+      }
+      h2 {
+        font-size: 26px;
+        text-align: left;
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid #000000;
+        width: 233px;
+        margin-top: 50px;
+        font-size: 16px;
+        background-color: #ffd972;
+      }
+      .log {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          font-size: 16px;
+        }
+        input {
+          width: 170px;
+          height: 45px;
+          border: none;
+          background-color: #587c83;
+          color: #fff;
+          border: none;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

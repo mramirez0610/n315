@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 6</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="/assets/imgs/logo.svg" alt="logo" class="logo" />
+      <nav>
+        <a id="home">Home</a>
+        <a id="browse">Browse</a>
+        <a id="recipe">Create Recipe</a>
+        <a id="login">Login</a>
+      </nav>
+    </div>
+
+    <main class="login">
+      <div class="acco">
+        <div class="login-sign">
+          <h2 id="banner">Login Here!</h2>
+          <input id="email" type="text" placeholder="Email Adress:" />
+          <input id="password" type="password" placeholder="Password:" />
+          <div class="log">
+            <input type="button" value="LOGIN" id="logBtn" />
+          </div>
+        </div>
+        <div class="login-sign">
+          <p>don't have an account?</p>
+          <h2>Sign Up!</h2>
+          <input type="text" placeholder="First Name:" />
+          <input type="text" placeholder="Last Name:" />
+          <input type="text" placeholder="Email Adress:" />
+          <input type="password" placeholder="Password:" />
+          <div class="log">
+            <input type="button" value="SIGN UP" id="logBtn" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div id="app"></div> -->
+
+    <div class="footer">
+      <div class="copy">Copyright 2019 The Jungle Cook</div>
+    </div>
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script type="module" src="app/app.js"></script>
+    <script type="module" src="model/model.js"></script>
+  </body>
+</html>
