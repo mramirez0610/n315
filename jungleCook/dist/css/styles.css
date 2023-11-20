@@ -1,0 +1,710 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../assets/fonts/Caveat-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/lato/Lato-Regular.ttf");
+}
+#app {
+  height: 100%;
+}
+
+.header {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  width: auto;
+  height: auto;
+}
+.header .wNav {
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  width: 50%;
+  margin: 10px 0;
+}
+.header .wNav a {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Caveat";
+  font-size: 25px;
+  color: #000;
+}
+.header .wNav a:visited {
+  color: #000;
+}
+.header .wNav #login {
+  background-color: #ffd972;
+  padding: 0 10px;
+  width: 25%;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.header .hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+.header .hamburger-icon {
+  display: none;
+}
+.header .hamburger-icon .mNav {
+  display: none;
+  position: absolute;
+  top: 50;
+  left: 0;
+  width: 100%;
+}
+.header .open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+  transition: 0.3s;
+}
+.header .open .bar2 {
+  opacity: 0;
+}
+.header .open .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+  transition: 0.3s;
+}
+.header .open .mNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  background-color: rgb(168, 42, 42);
+  z-index: 3;
+  height: 90svh;
+  margin-top: 15px;
+}
+.header .open .mNav a {
+  text-decoration: none;
+  font-family: "Caveat";
+  font-size: 30px;
+  color: #000;
+}
+
+.footer {
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  padding: 2%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lato";
+  font-size: 15px;
+  font-style: italic;
+  color: #393939;
+}
+.footer nav {
+  display: flex;
+  gap: 20px;
+}
+.footer nav a {
+  text-decoration: none;
+  color: #000;
+}
+.footer .socials {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .socials img {
+  height: 20px;
+  width: 20px;
+}
+
+@media all and (max-width: 900px) {
+  .header .wNav {
+    display: none;
+  }
+  .header .hamburger-icon {
+    display: block;
+  }
+  .footer {
+    margin-top: 10%;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    gap: 10%;
+    font-size: 12px;
+  }
+}
+.home-hero {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url("../assets/imgs/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.home-hero .main-bubble {
+  margin: 0 auto;
+  background-color: #ffd972;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+.home-hero .main-bubble .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.home-hero .main-bubble .content h1 {
+  font-family: "Caveat";
+}
+.home-hero .main-bubble .content p {
+  font-family: "Lato";
+  width: 50%;
+}
+.home-hero .sub-bubble {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: #fcbcb8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+  right: 30%;
+  top: 20%;
+  z-index: 1;
+}
+.home-hero .sub-bubble p {
+  font-family: "Lato";
+  font-size: 12px;
+  margin: 0;
+  font-style: italic;
+}
+
+@media all and (max-width: 900px) {
+  .home-hero .sub-bubble {
+    top: 23%;
+    right: 20%;
+  }
+}
+@media all and (max-width: 900px) {
+  .home-hero .sub-bubble {
+    top: 23%;
+    right: 15%;
+  }
+}
+@media all and (max-width: 375px) {
+  .home-hero .main-bubble {
+    width: 260px;
+    height: 260px;
+  }
+  .home-hero .main-bubble .content h1 {
+    font-size: 17px;
+  }
+  .home-hero .main-bubble .content p {
+    font-size: 9px;
+  }
+  .home-hero .sub-bubble {
+    width: 120px;
+    height: 120px;
+    top: 28%;
+    right: 15%;
+  }
+  .home-hero .sub-bubble .content p {
+    font-size: 8px;
+  }
+}
+.login {
+  height: 100%;
+  background-color: #ffd972;
+  display: flex;
+  justify-content: center;
+}
+.login .acco {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+}
+.login .acco .login-sign {
+  display: flex;
+  flex-direction: column;
+  width: 233px;
+  height: auto;
+}
+.login .acco .login-sign p {
+  font-size: 16px;
+  font-family: "Lato";
+  font-style: italic;
+}
+.login .acco .login-sign h2 {
+  font-size: 26px;
+  text-align: left;
+  font-family: "Lato";
+  letter-spacing: 2px;
+}
+.login .acco .login-sign input {
+  border: none;
+  border-bottom: 2px solid #000000;
+  width: 233px;
+  margin-top: 50px;
+  font-size: 16px;
+  background-color: #ffd972;
+  font-family: "Lato";
+}
+.login .acco .login-sign .log {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .acco .login-sign .log p {
+  font-size: 16px;
+}
+.login .acco .login-sign .log input {
+  width: 100%;
+  height: 45px;
+  border: none;
+  background-color: #ffd972;
+  color: #000;
+  border-radius: 40px;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: "Caveat";
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media all and (max-width: 900px) {
+  .login {
+    height: fit-content;
+    background-color: #ffd972;
+    display: flex;
+    justify-content: center;
+  }
+  .login .acco {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: auto;
+    margin: 10% 0;
+    flex-direction: column;
+  }
+  .login .acco .login-sign {
+    display: flex;
+    flex-direction: column;
+    width: 233px;
+    height: auto;
+    margin-top: 20%;
+  }
+  .login .acco .login-sign p {
+    font-size: 16px;
+    font-family: "Lato";
+    font-style: italic;
+  }
+  .login .acco .login-sign h2 {
+    font-size: 26px;
+    text-align: left;
+    font-family: "Lato";
+    letter-spacing: 2px;
+  }
+  .login .acco .login-sign input {
+    border: none;
+    border-bottom: 2px solid #000000;
+    width: 233px;
+    margin-top: 50px;
+    font-size: 16px;
+    background-color: #ffd972;
+    font-family: "Lato";
+  }
+  .login .acco .login-sign .log {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25%;
+  }
+  .login .acco .login-sign .log p {
+    font-size: 16px;
+  }
+  .login .acco .login-sign .log input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: #ffd972;
+    color: #000;
+    border-radius: 40px;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: "Caveat";
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+.browse-hero {
+  display: flex;
+  background: linear-gradient(rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../assets/imgs/recipe-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.browse-hero .content {
+  width: 80vw;
+  height: 70%;
+  margin: 0 auto;
+}
+.browse-hero .content h2 {
+  font-family: "Caveat";
+}
+.browse-hero .content .card-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.browse-hero .content .card-holder .card {
+  width: 45%;
+  height: 40%;
+  display: flex;
+}
+.browse-hero .content .card-holder .card .recipe-img {
+  background-color: grey;
+  width: 60%;
+  height: 100%;
+  border-radius: 24px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.browse-hero .content .card-holder .card .recipe-info {
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.browse-hero .content .card-holder .card .recipe-info .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  text-align: left;
+  max-height: 100%;
+}
+.browse-hero .content .card-holder .card .recipe-info .container p {
+  font-size: 12px;
+  font-family: "Lato";
+}
+.browse-hero .content .card-holder .card .recipe-info .container h3 {
+  font-family: "Lato";
+  text-align: left;
+}
+.browse-hero .content .card-holder .card .recipe-info .container .recipe-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.browse-hero .content .card-holder .card .recipe-info .container .recipe-details .info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Lato";
+}
+.browse-hero .content .card-holder .card .recipe-info .container .recipe-details .info .icon {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 1050px) {
+  #samples {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    gap: 5%;
+  }
+  #samples .card {
+    margin-top: 10%;
+    height: fit-content;
+    width: 100%;
+  }
+}
+@media (max-width: 490px) {
+  #samples {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    gap: 5%;
+  }
+  #samples .card {
+    margin-top: 10%;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #samples .card .recipe-info {
+    width: 100%;
+    height: 60%;
+  }
+  #samples .card .recipe-img {
+    width: 100%;
+    height: 90%;
+  }
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form .form-holder {
+  width: 50%;
+  padding-top: 20px;
+  margin: 10% auto;
+  font-family: "Lato";
+}
+.form .form-holder h1 {
+  font-family: "Caveat";
+  margin-bottom: 5%;
+}
+.form .form-holder input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid #000;
+  padding-left: 5px;
+}
+.form .form-holder .form-top {
+  position: relative;
+}
+.form .form-holder .form-top .image-btn {
+  position: absolute;
+  right: 0;
+  top: 13px;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  background-color: #efa7a7;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 26px;
+  font-family: "Caveat";
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.form .form-holder .form-ing {
+  margin-top: 100px;
+  position: relative;
+}
+.form .form-holder .form-ing .ing-add-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #efa7a7;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  bottom: 5px;
+  right: 0;
+  cursor: pointer;
+}
+.form .form-holder .form-instr {
+  margin-top: 100px;
+  position: relative;
+}
+.form .form-holder .form-instr .instr-add-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #efa7a7;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  bottom: 5px;
+  right: 0;
+  cursor: pointer;
+}
+.form .form-holder .btn {
+  width: 55%;
+  height: 50px;
+  background-color: #efa7a7;
+  color: #000;
+  margin: 0 auto;
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 26px;
+  cursor: pointer;
+  font-family: "Caveat";
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipes {
+  width: 80vw;
+  height: 50%;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+.recipes h2 {
+  font-family: "Caveat";
+  position: absolute;
+}
+.recipes .recipe-holder {
+  height: 50vh;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1%;
+}
+.recipes .recipe-holder .recipe-card {
+  height: 100%;
+  align-self: center;
+  margin-top: 100px;
+}
+.recipes .recipe-holder .recipe-card .card {
+  width: 45vw;
+  height: 60%;
+  display: flex;
+}
+.recipes .recipe-holder .recipe-card .card .recipe-img {
+  background-color: grey;
+  width: 60%;
+  height: 100%;
+  border-radius: 24px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.recipes .recipe-holder .recipe-card .card .recipe-info {
+  width: 40%;
+  background-color: #fff;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipes .recipe-holder .recipe-card .card .recipe-info .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  text-align: left;
+  max-height: 100%;
+}
+.recipes .recipe-holder .recipe-card .card .recipe-info .container p {
+  font-size: 12px;
+  font-family: "Lato";
+}
+.recipes .recipe-holder .recipe-card .card .recipe-info .container h3 {
+  font-family: "Lato";
+  text-align: left;
+}
+.recipes .recipe-holder .recipe-card .card .recipe-info .container .recipe-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.recipes .recipe-holder .recipe-card .card .recipe-info .container .recipe-details .info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Lato";
+}
+.recipes .recipe-holder .recipe-card .card .recipe-info .container .recipe-details .info .icon {
+  height: 30px;
+  width: 30px;
+}
+.recipes .recipe-holder .recipe-card .options {
+  margin-top: 4%;
+  display: flex;
+  gap: 2%;
+}
+.recipes .recipe-holder .recipe-card .options button {
+  width: 25%;
+  height: 50px;
+  font-family: "Caveat";
+  font-size: 18px;
+  background-color: #ffd972;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  .recipes {
+    height: 80vh;
+    width: 90vw;
+  }
+  .recipes .recipe-holder {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    overflow-y: scroll;
+    width: 75%;
+    height: 100%;
+  }
+  .recipes .recipe-holder .recipe-card .card {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
