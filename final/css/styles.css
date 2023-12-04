@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "MarkOT";
+  src: url(../assets/font/MarkOT-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "MarkOT";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+header {
+  height: auto;
+  width: auto;
+  background-color: #ece9e4;
+  padding: 2% 3%;
+}
+header .top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top-nav .search {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+header .top-nav .search input {
+  width: 100%;
+  border-radius: 40px;
+  border: 1px solid #8e9193;
+  font-size: 1.15rem;
+  padding: 1.5% 0.75rem;
+}
+header .top-nav img {
+  width: 175px;
+  height: 30px;
+  cursor: pointer;
+}
+header .top-nav .options {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  width: 30%;
+  font-size: 0.8rem;
+}
+header .top-nav .options span {
+  margin-right: 8%;
+  width: 100%;
+  text-align: center;
+}
+header .top-nav .options .sub-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header .bottom-nav {
+  margin-top: 2%;
+}
+header .bottom-nav .nav-options {
+  display: flex;
+  gap: 3%;
+  width: 90%;
+}
+header .bottom-nav .nav-options a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.15rem;
+}
+
+@media (max-width: 1480px) {
+  header .bottom-nav .nav-options {
+    width: 95%;
+  }
+  header .bottom-nav .nav-options a {
+    font-size: 0.95rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

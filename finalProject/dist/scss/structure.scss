@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "MarkOT";
+  src: url(../assets/font/MarkOT-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "MarkOT";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+main {
+  margin: 2% auto;
+  width: 80%;
+  #app {
+    width: auto;
+  }
+}
+footer {
+  width: 80%;
+  height: 40%;
+  margin: 4% auto;
+  background-color: red;
+  .banner {
+    width: 100%;
+    background-color: #3b2b2f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5% 3%;
+  }
+}
+.close {
+  display: none;
+}
+.open {
+  display: block;
+}

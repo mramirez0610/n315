@@ -1,0 +1,124 @@
+{
+    
+    "coffeeMakers": [
+        {
+            "id": 1,
+            "imgpath" : "assets/imgs/K-Cafe-Barista-Bar.webp",
+            "name": "K-Cafe Barista Bar",
+            "price": 99.99,
+            "rating": 4.9
+        }
+        ,
+        {
+            "id": 2,
+            "imgpath" : "assets/imgs/K-Cafe-Coffee-Latte-Cappuccino-Maker.webp",
+            "name": "K-Cafe Coffee Latte Cappuccino Maker",
+            "price": 94.99,
+            "rating": 4.3
+        }
+        ,
+        {
+            "id": 3,
+            "imgpath" : "assets/imgs/K-Cafe-SMART-Coffee-Latte-Cappuccino-Maker.webp",
+            "name": "K-Cafe SMART Coffee Latte Cappuccino Maker",
+            "price": 99.99,
+            "rating": 4.9
+        }
+        ,
+        {
+            "id": 4,
+            "imgpath" : "assets/imgs/K-Cafe-Special-Edition-Coffee-Latte-Cappuccino-Maker.webp",
+            "name": "K-Cafe Special Edition Coffee Latte Cappuccino Maker",
+            "price": 99.99,
+            "rating": 4.9
+        }
+        ,
+        {
+            "id": 5,
+            "imgpath" : "assets/imgs/K-Compact-Coffee-Maker-White.webp",
+            "name": "K-Compact Coffee Maker White",
+            "price": 50.00,
+            "rating": 4.5
+        }
+        ,
+        {
+            "id": 6,
+            "imgpath" : "assets/imgs/K-Compact-Coffee-Maker.webp",
+            "name": "K-Compact Coffee Maker",
+            "price": 99.99,
+            "rating": 5.0
+        }
+        ,
+        {
+            "id": 7,
+            "imgpath" : "assets/imgs/K-Duo-Single-Serve-Carafe-Coffee-Maker.webp",
+            "name": "K-Duo Single Serve Carafe Coffee Maker",
+            "price": 99.99,
+            "rating": 4.2
+        }
+        ,
+        {
+            "id": 8,
+            "imgpath" : "assets/imgs/K-Elite-Single-Serve-Coffee-Maker.webp",
+            "name": "K-Elite Single Serve Coffee Maker",
+            "price": 49.99,
+            "rating": 4.3
+        }
+        ,
+        {
+            "id": 9,
+            "imgpath" : "assets/imgs/k-iced-single-serve-coffee-maker.webp",
+            "name": "K-iced Single Serve Coffee Maker",
+            "price": 49.99,
+            "rating": 4.3
+        }
+        ,
+        {
+            "id": 10,
+            "imgpath" : "assets/imgs/K-Mini-Plus-Coffee-Maker.webp",
+            "name": "K-Mini Plus Coffee Maker",
+            "price": 109.99,
+            "rating": 4.6
+        }
+        ,
+        {
+            "id": 11,
+            "imgpath" : "assets/imgs/K-Select-Coffee-Maker.webp",
+            "name": "K-Select Coffee Maker",
+            "price": 69.99,
+            "rating": 4.3
+        }
+        ,
+        {
+            "id": 12,
+            "imgpath" : "assets/imgs/K-Slim-Iced-Single-Serve-Coffee-Maker.webp",
+            "name": "K-Slim Iced Single Serve Coffee Maker",
+            "price": 64.99,
+            "rating": 4.6
+        }
+        ,
+        {
+            "id": 13,
+            "imgpath" : "assets/imgs/K-Supreme-Single-Serve-Coffee-Maker.webp",
+            "name": "K-Supreme Single Serve Coffee Maker",
+            "price": 84.99,
+            "rating": 3.8
+        }
+        ,
+        {
+            "id": 14,
+            "imgpath" : "assets/imgs/K-Supreme-SMART-Coffee-Maker.webp",
+            "name": "K-Supreme SMART Coffee Maker",
+            "price": 114.99,
+            "rating": 4.2
+        }
+        ,
+        {
+            "id": 15,
+            "imgpath" : "assets/imgs/K155_Brewing_System.webp",
+            "name": "K155 OfficePRO Brewing System",
+            "price": 249.99,
+            "rating": 3.8
+        }
+    ]
+}

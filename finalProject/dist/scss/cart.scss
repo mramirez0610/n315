@@ -1,0 +1,119 @@
+.cart {
+  .hero {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    img {
+      width: 100%;
+      position: absolute;
+      margin-bottom: 5%;
+    }
+
+    .img-info {
+      width: 100%;
+      height: 100%;
+      height: auto;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #24523b;
+
+      .heading {
+        font-size: 20px;
+      }
+
+      .sub-heading {
+        font-size: 10px;
+      }
+
+      span {
+        top: 0;
+        right: 0;
+      }
+
+      .delivery {
+        display: flex;
+        gap: 5%;
+        width: 60%;
+        justify-content: space-around;
+        .delivery-option {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 40%;
+
+          .date {
+            font-weight: 100;
+          }
+        }
+      }
+    }
+  }
+
+  .cart-section {
+    width: auto;
+    height: auto;
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+
+    .cart-container {
+      width: 75%;
+      height: fit-content;
+      border-radius: 15px;
+      background-color: $primary-grey;
+      padding: 2% 2%;
+
+      #cartItems {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        .cart-item {
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: space-between;
+          background-color: #fff;
+          padding: 2% 1%;
+          border-bottom: 2px dotted $primary-grey;
+
+          .item-info {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            .title {
+              width: 50%;
+              margin-left: 5%;
+            }
+            .pricing {
+              width: 30%;
+              display: flex;
+              flex-direction: column;
+              gap: 10%;
+            }
+          }
+
+          img {
+            height: 20vh;
+          }
+        }
+      }
+    }
+  }
+
+  .summary {
+    width: 22%;
+    height: fit-content;
+    border: 1px solid $primary-grey;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 5% 2%;
+  }
+}
